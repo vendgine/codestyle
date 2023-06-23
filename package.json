@@ -1,6 +1,6 @@
 {
     "name": "@vngn/codestyle",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "ESLint, Prettier, Babel, and tsconfig configuration for @vngn/* packages",
     "keywords": [
         "vendgine",
@@ -11,6 +11,13 @@
         "babel",
         "tsconfig"
     ],
+    "exports": {
+        "./.eslintrc.cjs": "./.eslintrc.cjs",
+        "./.prettierrc.json": "./.prettierrc.json",
+        "./babel.config.json": "./babel.config.json",
+        "./tsconfig.base.json": "./tsconfig.base.json",
+        "./tsconfig.production.json": "./tsconfig.production.json"
+    },
     "author": "Andrei Piontkovskii <andrei@p10i.ru>",
     "license": "SEE LICENSE IN LICENSE.txt"
 }
