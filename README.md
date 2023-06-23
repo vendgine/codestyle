@@ -22,45 +22,45 @@ To use the provided configurations, extend the respective configuration files in
 
 ## ESLint
 
-Create an `.eslintrc.cjs` file in the root of your project and extend the `@vngn/codestyle/eslint` configuration:
+Create an `.eslintrc.cjs` file in the root of your project and extend the `@vngn/codestyle/.eslintrc.cjs` configuration:
 
 ```js
 module.exports = {
-  extends: ['@vngn/codestyle/eslint'],
+  extends: ['@vngn/codestyle/.eslintrc.cjs'],
   // Add any project-specific rules or overrides here
 };
 ```
 
 ## Prettier
 
-Create a `.prettierrc.js` file in the root of your project and extend the `@vngn/codestyle/prettier` configuration:
+Create a `.prettierrc.js` file in the root of your project and extend the `@vngn/codestyle/.prettierrc.json` configuration:
 
 ```js
 module.exports = {
-  ...require('@vngn/codestyle/prettier'),
+  ...require('@vngn/codestyle/.prettierrc.json'),
   // Add any project-specific Prettier configurations here
 };
 ```
 
 ## Babel
 
-Create a `babel.config.js` file in the root of your project and extend the `@vngn/codestyle/babel` configuration:
+Create a `babel.config.js` file in the root of your project and extend the `@vngn/codestyle/babel.config.json` configuration:
 
 ```js
 module.exports = {
-  extends: '@vngn/codestyle/babel',
+  extends: '@vngn/codestyle/babel.config.json',
   // Add any project-specific Babel configurations here
 };
 ```
 
 ## TypeScript
 
-Create a `tsconfig.json` (or `tsconfig.production.json`) file in the root of your project and extend the `@vngn/codestyle/tsconfig.*` configuration:
+Create a `tsconfig.json` (or `tsconfig.production.json`) file in the root of your project and extend the `@vngn/codestyle/tsconfig.*.json` configuration:
 
 *development:*
 ```json
 {
-  "extends": "@vngn/codestyle/tsconfig.base",
+  "extends": "@vngn/codestyle/tsconfig.base.json",
   "compilerOptions": {
     "outDir": "build",
     // Add any project-specific TypeScript configurations here
@@ -70,7 +70,7 @@ Create a `tsconfig.json` (or `tsconfig.production.json`) file in the root of you
 *production:*
 ```json
 {
-  "extends": "@vngn/codestyle/tsconfig.production",
+  "extends": "@vngn/codestyle/tsconfig.production.json",
   "compilerOptions": {
     "outDir": "build",
     // Add any project-specific TypeScript configurations here
