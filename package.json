@@ -1,0 +1,16 @@
+{
+    "name": "@vngn/codestyle",
+    "version": "0.0.1",
+    "description": "ESLint, Prettier, Babel, and tsconfig configuration for @vngn/* packages",
+    "keywords": [
+        "vendgine",
+        "vngn",
+        "codestyle",
+        "eslint",
+        "prettier",
+        "babel",
+        "tsconfig"
+    ],
+    "author": "Andrei Piontkovskii <andrei@p10i.ru>",
+    "license": "SEE LICENSE IN LICENSE.txt"
+}
