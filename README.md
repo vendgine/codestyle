@@ -1,6 +1,6 @@
 # @vngn/codestyle
 
-`@vngn/codestyle` is a package that provides ESLint, Prettier, Babel, and tsconfig configuration for other @vngn/* packages. It enforces consistent coding style and ensures code quality across the Vendgine Project.
+`@vngn/codestyle` is a package that provides ESLint, Prettier, Babel, and tsconfig configuration for other `@vngn/*` packages. It enforces consistent coding style and ensures code quality across the Vendgine Project.
 
 ## Features
 
