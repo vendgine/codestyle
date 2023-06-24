@@ -26,7 +26,7 @@ Create an `.eslintrc.cjs` file in the root of your project and extend the `@vngn
 
 ```js
 module.exports = {
-  extends: ['@vngn/codestyle/.eslintrc.cjs'],
+  extends: ['./node_modules/@vngn/codestyle/.eslintrc.cjs'],
   // Add any project-specific rules or overrides here
 };
 ```
