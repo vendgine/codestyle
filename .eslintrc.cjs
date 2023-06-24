@@ -92,9 +92,6 @@ module.exports = {
   "parserOptions": {
     // Use ES2022 syntax:
     "ecmaVersion": 2022,
-    // Use tsconfig from root directory:
-    "tsconfigRootDir": __dirname,
-    "project": "./tsconfig.json",
     // Add extra file extensions for typescript parser:
     "extraFileExtensions": [".cjs", ".mjs"],
     // Set module source type:
