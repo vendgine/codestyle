@@ -1,10 +1,10 @@
 # @vngn/codestyle
 
-`@vngn/codestyle` is a package that provides ESLint, Prettier, Babel, and tsconfig configuration for other `@vngn/*` packages. It enforces consistent coding style and ensures code quality across the Vendgine Project.
+`@vngn/codestyle` is a package that provides ESLint, Prettier, and tsconfig configuration for other `@vngn/*` packages. It enforces consistent coding style and ensures code quality across the Vendgine Project.
 
 ## Features
 
-- Configurations for ESLint, Prettier, Babel, and tsconfig
+- Configurations for ESLint, Prettier, and tsconfig
 - Consistent coding style and code quality
 - Easy integration with Vendgine projects
 
@@ -39,17 +39,6 @@ Create a `.prettierrc.js` file in the root of your project and extend the `@vngn
 module.exports = {
   ...require('@vngn/codestyle/.prettierrc.json'),
   // Add any project-specific Prettier configurations here
-};
-```
-
-## Babel
-
-Create a `babel.config.js` file in the root of your project and extend the `@vngn/codestyle/babel.config.json` configuration:
-
-```js
-module.exports = {
-  extends: '@vngn/codestyle/babel.config.json',
-  // Add any project-specific Babel configurations here
 };
 ```
 

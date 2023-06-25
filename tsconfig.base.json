@@ -22,5 +22,8 @@
         "downlevelIteration": true,
         "noEmitHelpers": true,
         "importHelpers": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "preact",
+        "types": ["preact"]
     }
 }
