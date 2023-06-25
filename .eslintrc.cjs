@@ -73,7 +73,7 @@ const noTypeAlias = [
 const importSorting = [
   "error",
   {
-    "groups": [["^\\u0000"], ["^[^.]"], ["^(?!@\/)"], ["^@\/"], ["^\\."]]
+    "groups": [["^\\u0000"], ["^[^.]"], ["^(?!@\/)"], ["^@vngn\/"], ["^@app\/"], ["^\\."]]
   }
 ]
 
@@ -92,9 +92,6 @@ module.exports = {
   "parserOptions": {
     // Use ES2022 syntax:
     "ecmaVersion": 2022,
-    // Use tsconfig from root directory:
-    "tsconfigRootDir": __dirname,
-    "project": "./tsconfig.json",
     // Add extra file extensions for typescript parser:
     "extraFileExtensions": [".cjs", ".mjs"],
     // Set module source type:
@@ -115,8 +112,6 @@ module.exports = {
   "settings": {
       // Allow "cjs" and "mjs" as imports from modules:
       "import/extensions": [".cjs", ".mjs"],
-      // Use "@/" as root directory name:
-      "import/internal-regex": "^@\//",
   },
   // Empty "extends" and "rules" at root level:
   "extends": [],
@@ -125,7 +120,7 @@ module.exports = {
   "overrides": [
     {
       // Configure settings for "mts" files:
-      "files": ["*.mts"],
+      "files": ["*.mts", "*.ts", "*.tsx"],
       // Extend configuration for plugins:
       "extends": [
         // Use eslint/typescript-eslint recommendations:
@@ -137,7 +132,9 @@ module.exports = {
         "plugin:import/warnings",
         "plugin:import/typescript",
         // Use recommendations for jsdoc:
-        "plugin:jsdoc/recommended"
+        "plugin:jsdoc/recommended",
+        // Use plugin for tsx files:
+        "plugin:react/recommended",
       ],
       // Reconfigure a set of validation rules:
       "rules": {
