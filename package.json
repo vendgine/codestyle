@@ -1,6 +1,6 @@
 {
     "name": "@vngn/codestyle",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "ESLint, Prettier, and tsconfig configuration for @vngn/* packages",
     "keywords": [
         "vendgine",
