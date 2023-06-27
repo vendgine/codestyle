@@ -133,8 +133,6 @@ module.exports = {
         "plugin:import/typescript",
         // Use recommendations for jsdoc:
         "plugin:jsdoc/recommended",
-        // Use plugin for tsx files:
-        "plugin:react/recommended",
       ],
       // Reconfigure a set of validation rules:
       "rules": {
@@ -1034,8 +1032,6 @@ module.exports = {
         "jsdoc/match-description": "error",
         // Controls how and whether jsdoc blocks can be expressed as single or multiple line blocks
         "jsdoc/multiline-blocks": "error",
-        // Enforces a consistent padding of the block description
-        "jsdoc/newline-after-description": "error",
         // This rule checks for multi-line-style comments which fail to meet the criteria of a jsdoc block
         "jsdoc/no-bad-blocks": "error",
         // This rule reports defaults being used on the relevant portion of @param or @default
@@ -1099,6 +1095,21 @@ module.exports = {
         // Require all types to be valid
         "jsdoc/valid-types": "error",
       }
+    },
+    {
+      "files": ["*.tsx"],
+      "extends": [
+        // Use plugin for tsx files:
+        "plugin:react/recommended",
+      ],
+      "rules": {
+        // Prevent importing the submodules of other modules
+        "import/no-internal-modules": "off",
+        // Forbid importing modules from parent directories
+        "import/no-relative-parent-imports": "off",
+        // Forbid default exports
+        "import/no-default-export": "off",
+      },
     },
     {
       // Configure settings for "html" files:
