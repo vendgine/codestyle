@@ -119,7 +119,7 @@ module.exports = {
   // Override configuration for different file types:
   "overrides": [
     {
-      // Configure settings for "mts" files:
+      // Configure settings for module files:
       "files": ["*.mts", "*.ts", "*.tsx"],
       // Extend configuration for plugins:
       "extends": [
@@ -259,7 +259,7 @@ module.exports = {
         // Enforce the use of as const over literal type
         "@typescript-eslint/prefer-as-const": "error",
         // Require each enum member value to be explicitly initialize
-      "@typescript-eslint/prefer-enum-initializers": "off",
+        "@typescript-eslint/prefer-enum-initializers": "off",
         // Enforce the use of for-of loop over the standard for loop where possible
         "@typescript-eslint/prefer-for-of": "error",
         // Enforce using function types instead of interfaces with call signatures
@@ -1097,7 +1097,7 @@ module.exports = {
       }
     },
     {
-      "files": ["*.tsx"],
+      "files": ["*.ts", "*.tsx"],
       "extends": [
         // Use plugin for tsx files:
         "plugin:react/recommended",
