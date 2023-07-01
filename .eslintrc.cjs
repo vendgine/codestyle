@@ -35,16 +35,16 @@ const namingConvention = [
     "trailingUnderscore": "forbid"
   },
   {
-  "selector": "classProperty",
-  "format": ["camelCase", "PascalCase", "UPPER_CASE"],
-  "leadingUnderscore": "forbid",
-  "trailingUnderscore": "forbid"
-},
-{
-  "selector": "objectLiteralProperty",
-  "format": null
-},
-{
+    "selector": "classProperty",
+    "format": ["camelCase", "PascalCase", "UPPER_CASE"],
+    "leadingUnderscore": "forbid",
+    "trailingUnderscore": "forbid"
+  },
+  {
+    "selector": "objectLiteralProperty",
+    "format": null
+  },
+  {
     "selector": "typeLike",
     "format": ["PascalCase"]
   },
@@ -110,8 +110,8 @@ module.exports = {
   ],
   // Plugin's configuration options:
   "settings": {
-      // Allow "cjs" and "mjs" as imports from modules:
-      "import/extensions": [".cjs", ".mjs"],
+    // Allow "cjs" and "mjs" as imports from modules:
+    "import/extensions": [".cjs", ".mjs"],
   },
   // Empty "extends" and "rules" at root level:
   "extends": [],
@@ -139,7 +139,7 @@ module.exports = {
         // Require that function overload signatures be consecutive
         "@typescript-eslint/adjacent-overload-signatures": "error",
         // Require consistently using either T[] or Array<T> for arrays
-        "@typescript-eslint/array-type": ["error", {"default": "array-simple"}],
+        "@typescript-eslint/array-type": ["error", { "default": "array-simple" }],
         // Disallow awaiting a value that is not a Thenable
         "@typescript-eslint/await-thenable": "error",
         // Disallow @ts-<directive> comments or require descriptions after directives
@@ -153,17 +153,17 @@ module.exports = {
         // Require or disallow the Record type
         "@typescript-eslint/consistent-indexed-object-style": ["error", "index-signature"],
         // Enforce consistent usage of type assertions
-        "@typescript-eslint/consistent-type-assertions": ["error", {"assertionStyle": "as", "objectLiteralTypeAssertions": "allow-as-parameter"}],
+        "@typescript-eslint/consistent-type-assertions": ["error", { "assertionStyle": "as", "objectLiteralTypeAssertions": "allow-as-parameter" }],
         // Enforce type definitions to consistently use either interface or type
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         // Enforce consistent usage of type exports
         "@typescript-eslint/consistent-type-exports": "error",
         // Enforce consistent usage of type imports
-        "@typescript-eslint/consistent-type-imports": ["error", {"prefer": "type-imports", "disallowTypeAnnotations": true}],
+        "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports", "disallowTypeAnnotations": true }],
         // Require explicit return types on functions and class methods
         "@typescript-eslint/explicit-function-return-type": "error",
         // Require explicit accessibility modifiers on class properties and methods
-        "@typescript-eslint/explicit-member-accessibility": ["error", {"accessibility": "no-public"}],
+        "@typescript-eslint/explicit-member-accessibility": ["error", { "accessibility": "no-public" }],
         // Require explicit return and argument types on exported functions' and classes' public class methods
         "@typescript-eslint/explicit-module-boundary-types": "error",
         // Require a specific member delimiter style for interfaces and type literals
@@ -187,11 +187,11 @@ module.exports = {
         // Disallow the declaration of empty interfaces
         "@typescript-eslint/no-empty-interface": "off",
         // Disallow the any type
-        "@typescript-eslint/no-explicit-any": ["error", {"fixToUnknown": false, "ignoreRestArgs": true}],
+        "@typescript-eslint/no-explicit-any": ["error", { "fixToUnknown": false, "ignoreRestArgs": true }],
         // Disallow extra non-null assertions
         "@typescript-eslint/no-extra-non-null-assertion": "error",
         // Disallow classes used as namespaces
-        "@typescript-eslint/no-extraneous-class": ["error", {"allowEmpty": true}],
+        "@typescript-eslint/no-extraneous-class": ["error", { "allowEmpty": true }],
         // Require Promise-like statements to be handled appropriatel
         "@typescript-eslint/no-floating-promises": "error",
         // Disallow iterating over an array with a for-in loop
@@ -255,7 +255,7 @@ module.exports = {
         // Enforce non-null assertions over explicit type casts
         "@typescript-eslint/non-nullable-type-assertion-style": "error",
         // Require or disallow parameter properties in class constructors
-        "@typescript-eslint/parameter-properties": ["error", {"allow": ["readonly"]}],
+        "@typescript-eslint/parameter-properties": ["error", { "allow": ["readonly"] }],
         // Enforce the use of as const over literal type
         "@typescript-eslint/prefer-as-const": "error",
         // Require each enum member value to be explicitly initialize
@@ -739,7 +739,7 @@ module.exports = {
         // Require or disallow assignment operator shorthand where possible
         "operator-assignment": "error",
         // Require using arrow functions for callbacks
-      "prefer-arrow-callback": "off",
+        "prefer-arrow-callback": "off",
         // Require `const` declarations for variables that are never reassigned after declared
         "prefer-const": "error",
         // Require destructuring from arrays and/or objects
@@ -853,7 +853,7 @@ module.exports = {
         // Require a newline after each call in a method chain
         "newline-per-chained-call": "error",
         // Disallow unnecessary parentheses
-      "no-extra-parens": "off",
+        "no-extra-parens": "off",
         // Disallow mixed spaces and tabs for indentation
         "no-mixed-spaces-and-tabs": "error",
         // Disallow multiple spaces
@@ -1095,23 +1095,6 @@ module.exports = {
         // Require all types to be valid
         "jsdoc/valid-types": "error",
       }
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "extends": [
-        // Use plugin for tsx files:
-        "plugin:react/recommended",
-      ],
-      "rules": {
-        // Prevent importing the submodules of other modules
-        "import/no-internal-modules": "off",
-        // Forbid importing modules from parent directories
-        "import/no-relative-parent-imports": "off",
-        // Forbid default exports
-        "import/no-default-export": "off",
-        // Forbid namespace (a.k.a. "wildcard" *) imports
-        "import/no-namespace": "off",
-      },
     },
     {
       // Configure settings for "html" files:
