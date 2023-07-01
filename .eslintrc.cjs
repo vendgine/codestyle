@@ -1109,6 +1109,8 @@ module.exports = {
         "import/no-relative-parent-imports": "off",
         // Forbid default exports
         "import/no-default-export": "off",
+        // Forbid namespace (a.k.a. "wildcard" *) imports
+        "import/no-namespace": "off",
       },
     },
     {
